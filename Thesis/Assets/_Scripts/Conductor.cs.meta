@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: c962de087dc76dd41a372dd5f09a1de6
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - round1: {instanceID: 0}
+  - round2: {instanceID: 0}
+  - experiment: {fileID: 4900000, guid: c8a83afb4b5561d408e9302a1507fc82, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

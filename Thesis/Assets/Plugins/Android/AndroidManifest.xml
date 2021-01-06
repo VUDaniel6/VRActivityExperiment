@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:installLocation="auto">
+  <uses-feature android:name="android.hardware.vr.headtracking" android:version="1" android:required="true" />
+  <!-- Request the headset DoF mode -->
+  <uses-feature android:name="oculus.software.handtracking" android:required="false" />
+  <uses-feature android:name="android.hardware.microphone" android:required="true" />
+  <uses-feature android:name="android.permission.CAMERA" android:required="true" />
+  <uses-feature android:name="android.permission.RECORD_AUDIO" android:required="true" />
+  <uses-feature android:name="android.permission.MODIFY_AUDIO_SETTINGS" android:required="true" />
+  <uses-feature android:name="android.permission.CAPTURE_AUDIO_OUTPUT" android:required="true" />
+
+
+  <uses-permission android:name="android.hardware.microphone"/>
+  <uses-permission android:name="android.permission.CAMERA" />
+  <uses-permission android:name="android.permission.RECORD_AUDIO" />
+  <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+  <uses-permission android:name="android.permission.CAPTURE_AUDIO_OUTPUT" />
+  <uses-permission android:name="oculus.permission.handtracking" />
+  <!-- Request the headset handtracking mode -->
+  <application>
+    <activity
+        android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+        android:configChanges="locale|fontScale|keyboard|keyboardHidden|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+        android:launchMode="singleTask"
+        android:name="com.unity3d.player.UnityPlayerActivity"
+        android:excludeFromRecents="true">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+    </activity>
+    <meta-data android:name="unityplayer.SkipPermissionsDialog" android:value="false" />
+  </application>
+</manifest>
